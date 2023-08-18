@@ -37,8 +37,11 @@
             <% Category.all.each do |category| %>
             <li class="nav-item">
               <%= link_to category.name, category, class: "nav-link" %>
+              </li>
+              <% end %>
+            <li class="nav-item">
+              <%= link_to "About", "/about" , class: "nav-link" %>
             </li>
-            <% end %>
           <%# </ul>
         </li> %>
       </ul>
